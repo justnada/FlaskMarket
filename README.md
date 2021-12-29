@@ -1,3 +1,5 @@
+<h2 align="center">Flask Market</h2>
+
 # Flask Market
 
 Python web application using Flask framework
