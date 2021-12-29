@@ -1,8 +1,7 @@
-<h2 align="center">Flask Market</h2>
+<h1 align="center">Flask Market</h1>
 
-# Flask Market
-
-Python web application using Flask framework
+## About
+**Flask market** is a project where i learn about python flask
 
 ## Features
 * User registration
@@ -12,7 +11,7 @@ Python web application using Flask framework
 
 ## Preview
 * Home page
-![image](https://user-images.githubusercontent.com/50564780/147642825-cf3166b6-13a7-4534-959a-dc2670de6e5e.png)
+<img src="https://user-images.githubusercontent.com/50564780/147642825-cf3166b6-13a7-4534-959a-dc2670de6e5e.png" width="50" alt="Home Page">
 
 * Registration page
 ![image](https://user-images.githubusercontent.com/50564780/147643503-eca1ddc1-9975-48f3-bfe5-3ec84f2c2d23.png)
