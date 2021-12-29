@@ -11,7 +11,7 @@
 
 ## Preview
 * Home page
-<img src="https://user-images.githubusercontent.com/50564780/147642825-cf3166b6-13a7-4534-959a-dc2670de6e5e.png" width="300" alt="Home Page">
+<img src="https://user-images.githubusercontent.com/50564780/147642825-cf3166b6-13a7-4534-959a-dc2670de6e5e.png" width="500" alt="Home Page">
 
 * Registration page
 ![image](https://user-images.githubusercontent.com/50564780/147643503-eca1ddc1-9975-48f3-bfe5-3ec84f2c2d23.png)
