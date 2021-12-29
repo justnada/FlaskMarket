@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block title %} Login {% endblock %} {% block
+content %}
+<div class="row justify-content-center">
+  <div class="col-sm-8">
+    <div class="mx-md-5 px-md-5 mx-sm-3 px-sm-3">
+      <div class="text-center mb-5">
+        <h2>Login Form</h2>
+      </div>
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-floating mb-3">
+          {{ form.username(class='form-control', placeholder='Username') }} {{
+          form.username.label() }}
+        </div>
+        <div class="form-floating mb-3">
+          {{ form.password(class='form-control', placeholder='Password') }} {{
+          form.password.label() }}
+        </div>
+        <div class="d-grid gap-2 mt-5">
+          {{ form.submit(class='btn btn-outline-info p-3 fs-5') }}
+        </div>
+      </form>
+      <div class="mt-4 d-flex justify-content-center align-items center">
+        <p class="me-2">Do not have an account?</p>
+        <a href="{{ url_for('register_page') }}" class="text-warning">
+          Register here
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

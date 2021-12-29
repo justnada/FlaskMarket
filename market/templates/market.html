@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% block title %} Market {% endblock %} {% block
+content %}
+<div class="row">
+  <div class="col-md-12">
+    <h3>Available Products</h3>
+    <p>Click <span class="text-warning">purchase</span> to buy them</p>
+    <div class="table-responsive">
+      <table
+        class="
+          table table-hover table-dark table-striped table-borderless
+          text-white
+          mt-3
+        "
+      >
+        <thead>
+          <tr>
+            <th scope="col" class="py-3 px-4">ID</th>
+            <th scope="col" class="py-3 px-4">Name</th>
+            <th scope="col" class="py-3 px-4">Barcode</th>
+            <th scope="col" class="py-3 px-4">Price</th>
+            <th scope="col" class="py-3 px-4">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %} {% include'includes/items_modals.html'%}
+          <tr>
+            <th scope="row" class="py-3 px-4">{{ item.id }}</th>
+            <td class="py-3 px-4">{{ item.name }}</td>
+            <td class="py-3 px-4">{{ item.barcode }}</td>
+            <td class="py-3 px-4">{{ item.prettier_price }}</td>
+            <td class="py-3 px-4">
+              <div class="btn-group" role="button">
+                <button
+                  class="btn btn-outline-info"
+                  data-bs-toggle="modal"
+                  data-bs-target="#MoreInfoModal{{ item.id }}"
+                >
+                  Info
+                </button>
+                <button
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#PurchaseItemModal{{ item.id }}"
+                >
+                  Purchase This Item
+                </button>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

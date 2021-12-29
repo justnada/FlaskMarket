@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block title %} Market {% endblock %} {% block
+content %}
+<div class="row">
+  <div class="col-md-12">
+    <h3>Owned Products</h3>
+    <p>
+      Click <span class="text-warning">sell item</span> to put a product back to
+      the market
+    </p>
+    <div class="d-flex mt-4">
+      {% for item in owned_items %} {% include'includes/items_modals.html'%}
+      <div class="card bg-dark-custom p-2 me-3" style="width: 18rem">
+        <div class="card-body text-center">
+          <h5 class="card-title fs-4 text-info">{{ item.name }}</h5>
+          <p class="card-text my-4">{{ item.description }}</p>
+          <button
+            class="btn btn-outline-warning"
+            data-bs-toggle="modal"
+            data-bs-target="#SellItemModal{{ item.id }}"
+          >
+            Sell This Item
+          </button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
